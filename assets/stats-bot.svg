@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26150c"/>
+      <stop offset="1" stop-color="#0f0b0a"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7a33"/>
+      <stop offset="1" stop-color="#ff5500" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb020" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#ffb020" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity=".06">
+    <line x1="60" y1="80" x2="580" y2="80"/>
+    <line x1="60" y1="140" x2="580" y2="140"/>
+    <line x1="60" y1="200" x2="580" y2="200"/>
+    <line x1="60" y1="260" x2="580" y2="260"/>
+  </g>
+
+  <!-- bars -->
+  <g fill="url(#bar)">
+    <rect x="90" y="200" width="44" height="100" rx="8"/>
+    <rect x="160" y="160" width="44" height="140" rx="8"/>
+    <rect x="230" y="180" width="44" height="120" rx="8"/>
+    <rect x="300" y="120" width="44" height="180" rx="8"/>
+    <rect x="370" y="140" width="44" height="160" rx="8"/>
+    <rect x="440" y="90" width="44" height="210" rx="8"/>
+    <rect x="510" y="70" width="44" height="230" rx="8"/>
+  </g>
+
+  <!-- trend line -->
+  <path d="M112 190 L182 150 L252 168 L322 108 L392 126 L462 78 L532 56 L532 300 L112 300 Z" fill="url(#area)"/>
+  <path d="M112 190 L182 150 L252 168 L322 108 L392 126 L462 78 L532 56" fill="none" stroke="#ffb020" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <g fill="#0f0b0a" stroke="#ffb020" stroke-width="4">
+    <circle cx="322" cy="108" r="7"/>
+    <circle cx="532" cy="56" r="8"/>
+  </g>
+
+  <!-- stat chips -->
+  <g font-family="monospace" font-weight="700" transform="translate(50 0)">
+    <rect x="60" y="32" width="128" height="36" rx="10" fill="#ffffff" fill-opacity=".08"/>
+    <text x="76" y="56" font-size="16" fill="#ffb020">K/D</text>
+    <text x="172" y="56" font-size="16" fill="#fff" text-anchor="end">1.32</text>
+    <rect x="204" y="32" width="140" height="36" rx="10" fill="#ffffff" fill-opacity=".08"/>
+    <text x="220" y="56" font-size="16" fill="#ffb020">ELO</text>
+    <text x="328" y="56" font-size="16" fill="#fff" text-anchor="end">2140</text>
+  </g>
+  <rect x="60" y="300" width="520" height="3" rx="1.5" fill="#ffffff" fill-opacity=".15"/>
+</svg>
