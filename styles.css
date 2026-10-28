@@ -70,10 +70,10 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.12; letter-spacing
 .nav-cta {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 8px 16px; border-radius: 10px;
-  background: var(--discord); color: #fff !important; font-weight: 600;
+  background: linear-gradient(135deg, #ff7a1a, var(--accent)); color: #fff !important; font-weight: 600;
   transition: transform .2s, box-shadow .2s;
 }
-.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(88, 101, 242, .4); }
+.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(255, 85, 0, .4); }
 
 /* Hero */
 .hero { position: relative; padding: 96px 0 104px; overflow: hidden; }
@@ -306,10 +306,8 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.12; letter-spacing
 .contact-card div span { color: var(--muted); font-size: 0.9rem; }
 .contact-card .arrow { margin-left: auto; color: var(--muted); transition: transform .25s, color .25s; }
 .contact-card:hover .arrow { transform: translateX(4px); color: var(--text); }
-.contact-card.discord .contact-icon { background: var(--discord); }
-.contact-card.discord:hover { border-color: var(--discord); }
-.contact-card.faceit .contact-icon { background: var(--accent); }
-.contact-card.faceit:hover { border-color: var(--accent); }
+.contact-card.email .contact-icon { background: linear-gradient(135deg, #ff7a1a, var(--accent)); }
+.contact-card.email:hover { border-color: var(--accent); }
 
 /* Footer */
 .footer { border-top: 1px solid var(--border); padding: 28px 0; font-size: 0.9rem; }
