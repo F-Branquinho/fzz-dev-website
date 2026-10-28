@@ -23,23 +23,23 @@ const PROJECTS = [
     links: { demo: "https://www.ysclpharma.com/" }
   },
   {
-    title: "Discord Bot",
-    description: "Bot for the FzZ Dev Discord server, with commands and tools for the community.",
+    title: "Birthdays Discord Bot",
+    description: "Free, open-source Discord bot that wishes your server members a happy birthday and posts the month's birthdays.",
     category: "Discord Bot",
-    tags: ["Discord"],
+    tags: ["Discord", "Open source"],
     status: "Completed",
     image: "assets/discord-bot.svg",
-    links: {}
+    links: { demo: "https://birthdays.fzz-tools.com/" }
   },
   {
     title: "Stats Bot",
-    description: "Bot that shows player statistics right inside Discord.",
+    description: "Shows CS2 leaderboards for your Discord server, powered by Leetify, and posts the MVP of the month.",
     category: "Discord Bot",
     icon: "chart",
-    tags: ["Discord", "Stats"],
+    tags: ["Discord", "CS2", "Leetify"],
     status: "In development",
     image: "assets/stats-bot.svg",
-    links: {}
+    links: { demo: "https://stats.fzz-tools.com/" }
   },
   {
     title: "FzZ Dev Website",

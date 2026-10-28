@@ -239,6 +239,11 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.12; letter-spacing
 .card-actions a:hover { color: var(--text); }
 .card-actions .link-primary { color: var(--accent); }
 .card-actions .link-primary:hover { color: var(--accent-2); }
+/* The primary link covers the whole card, so clicking anywhere opens the project */
+.card-actions .link-primary::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.card-actions a:not(.link-primary) { position: relative; z-index: 2; }
+.card:has(.link-primary) { cursor: pointer; }
+.card:hover .link-primary { color: var(--accent-2); }
 
 /* Featured card spans two columns, image beside text */
 .card.featured { grid-column: 1 / -1; flex-direction: row; }
