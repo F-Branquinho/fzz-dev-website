@@ -42,6 +42,16 @@ const PROJECTS = [
     links: { demo: "https://stats.fzz-tools.com/" }
   },
   {
+    title: "QR Fotos",
+    description: "Self-hosted photo drop for weddings and parties. Guests scan a QR code and send photos and short videos from their phone, no app needed, and only the host can see them.",
+    category: "Tool",
+    icon: "zap",
+    tags: ["Node.js", "TypeScript", "Docker", "Self-hosted"],
+    status: "Completed",
+    image: "assets/qr-photos.svg",
+    links: {}
+  },
+  {
     title: "FzZ Dev Website",
     description: "The team's official website, showcasing every project built by FzZ Dev.",
     category: "Website",

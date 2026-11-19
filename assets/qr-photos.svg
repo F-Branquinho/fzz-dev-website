@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26150c"/>
+      <stop offset="1" stop-color="#0f0b0a"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb020"/>
+      <stop offset="1" stop-color="#ff5500"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+
+  <!-- QR card on a table -->
+  <g transform="translate(70 70)">
+    <rect width="200" height="220" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".12"/>
+    <rect x="30" y="26" width="140" height="140" rx="10" fill="#fff"/>
+    <g fill="#0f0b0a">
+      <rect x="42" y="38" width="38" height="38" rx="4"/>
+      <rect x="120" y="38" width="38" height="38" rx="4"/>
+      <rect x="42" y="116" width="38" height="38" rx="4"/>
+    </g>
+    <g fill="#fff">
+      <rect x="50" y="46" width="22" height="22" rx="2"/>
+      <rect x="128" y="46" width="22" height="22" rx="2"/>
+      <rect x="50" y="124" width="22" height="22" rx="2"/>
+    </g>
+    <g fill="#0f0b0a">
+      <rect x="56" y="52" width="10" height="10"/><rect x="134" y="52" width="10" height="10"/><rect x="56" y="130" width="10" height="10"/>
+      <rect x="92" y="40" width="10" height="10"/><rect x="92" y="62" width="14" height="10"/><rect x="88" y="90" width="12" height="12"/>
+      <rect x="108" y="88" width="10" height="16"/><rect x="124" y="92" width="14" height="10"/><rect x="146" y="88" width="10" height="10"/>
+      <rect x="92" y="116" width="10" height="10"/><rect x="110" y="120" width="14" height="10"/><rect x="132" y="116" width="10" height="16"/>
+      <rect x="146" y="138" width="12" height="12"/><rect x="96" y="138" width="10" height="12"/><rect x="116" y="140" width="12" height="10"/>
+      <rect x="44" y="92" width="12" height="10"/><rect x="64" y="96" width="12" height="10"/>
+    </g>
+    <text x="100" y="196" font-family="monospace" font-weight="700" font-size="14" fill="#ffb020" text-anchor="middle">SCAN TO SHARE</text>
+  </g>
+
+  <!-- arrow -->
+  <path d="M300 180 C 330 180, 340 150, 372 150" fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <path d="m366 140 12 10-12 10" fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- phone -->
+  <g transform="translate(392 50)">
+    <rect width="140" height="260" rx="24" fill="#1d1613" stroke="#ffffff" stroke-opacity=".18" stroke-width="3"/>
+    <rect x="52" y="14" width="36" height="6" rx="3" fill="#ffffff" fill-opacity=".2"/>
+    <rect x="16" y="40" width="108" height="40" rx="10" fill="url(#photo)"/>
+    <circle cx="44" cy="60" r="9" fill="none" stroke="#0f0b0a" stroke-width="3"/>
+    <rect x="62" y="56" width="48" height="8" rx="4" fill="#0f0b0a" fill-opacity=".6"/>
+    <rect x="16" y="92" width="108" height="40" rx="10" fill="#ffffff" fill-opacity=".1"/>
+    <rect x="16" y="144" width="108" height="40" rx="10" fill="#ffffff" fill-opacity=".1"/>
+    <rect x="16" y="204" width="108" height="6" rx="3" fill="#ffffff" fill-opacity=".1"/>
+    <rect x="16" y="204" width="76" height="6" rx="3" fill="#ffb020"/>
+    <text x="70" y="236" font-family="monospace" font-weight="700" font-size="13" fill="#7fd18b" text-anchor="middle">✓ 7 sent</text>
+  </g>
+
+  <!-- photos flying in -->
+  <g transform="translate(548 70) rotate(12)">
+    <rect width="54" height="44" rx="6" fill="#fff"/>
+    <rect x="5" y="5" width="44" height="30" rx="3" fill="url(#photo)"/>
+  </g>
+  <g transform="translate(556 150) rotate(-8)" opacity=".75">
+    <rect width="46" height="38" rx="6" fill="#fff"/>
+    <rect x="4" y="4" width="38" height="26" rx="3" fill="#ffb020"/>
+  </g>
+  <rect x="60" y="320" width="520" height="3" rx="1.5" fill="#ffffff" fill-opacity=".15"/>
+</svg>
